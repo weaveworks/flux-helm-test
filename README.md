@@ -68,40 +68,9 @@ spec:
 
 ## User setup
 
-You can fork this repo and use it as the basis for trying out the Helm
-operator alpha. It is best to use a fresh Kubernetes cluster.
-
- 1. Set up helm by running `helm init`. Additional configuration may be
-    required when using [GKE](https://docs.helm.sh/using_helm/#gke) or
-    [other Kubernetes Distributions](https://docs.helm.sh/using_helm/#kubernetes-distribution-guide).
-    Have a read through
-    [Helm's installation instructions](https://docs.helm.sh/using_helm/#quickstart).
- 2. Make a fork of this repository to your own account, and clone it to your computer
- 3. In your cloned repo, change the git URL in
-    `artifacts/weave-helm-operator.yaml` to refer to your fork on github. Make
-    sure to use the full ssh form of the url.
-    - Good: `ssh://git@github.com/weaveworks/flux-helm-test`
-    - Bad: `git@github.com:weaveworks/flux-helm-test.git`
- 4. Go to [Weave Cloud](https://cloud.weave.works/) and create an instance
- 5. Set up the Weave agents by running the provided curl command
-
- 6. Before configuring "Deploy" for your new Weave Cloud instance, run
-    this in the cloned repository to install the Helm operator:
-
-    kubectl apply -f artifacts/
-
- 7. Now go back to Weave Cloud and set "Deploy" up, giving the git URL
-    of your forked repo. You will need to
-    install the deploy key (either using the button, or by copying and
-    pasting), since both the operator and the Flux daemon need it to
-    access your forked git repository. Run the kubectl command given
-    there to complete the setup.
-
-At this point, you can click through to Explore, wait a bit, and see
-the resources started in the cluster by the charts being released. If
-you make a change in the chart, or a change in the chart release
-resource, and push a commit to your fork, the change will be reflected
-shortly in your cluster.
+We published a step-by-step run-through on how to use Flux and Helm (using
+this repository) [over
+here](https://github.com/weaveworks/flux/blob/master/site/helm/get-started.md).
 
 ## <a name="help"></a>Getting Help
 
