@@ -4,7 +4,7 @@ A repository with example configs for relasing Helm charts via Flux.
 
 We published a step-by-step run-through on how to use Flux and Helm (using
 this repository) [over
-here](https://github.com/weaveworks/flux/blob/master/site/helm/get-started.md).
+here](https://github.com/weaveworks/flux/blob/master/site/helm-get-started.md).
 
 ## <a name="help"></a>Getting Help
 
